@@ -1,0 +1,46 @@
+
+#galerie {
+	display: inline-block;
+	width: 75%;
+	text-align: center;
+}
+
+img {
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  align-items: center;
+}
+
+.column {
+	width:auto;
+  padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	max-height: 250px;
+	max-width: 250px;
+	border: 2px solid red;
+	padding: 3px;
+	background-color: black;
+}
+
+@media screen and (max-width: 770px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

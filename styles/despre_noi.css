@@ -1,0 +1,78 @@
+
+#container_princip>hgroup {
+	margin-top: 30px;
+	display: inline-block;
+}
+
+
+
+@keyframes tranzitie_stg{
+	0% {left:-100vw;}
+	25% {left: 0.25vw;}
+	35% {left: 1 vw;}
+	70% {left: 1.5 vw;}
+	100% {left: auto;}
+}
+
+
+article {
+	width: 50%;
+	display: inline-block;
+	text-align: justify;
+	background-color: #545454;
+	padding: 10px;
+	margin: 15px;
+	position: relative;
+	animation-name: tranzitie_stg;
+	animation-duration: 10s;
+}
+
+
+#container_princip>header {
+padding-top: 15px;
+}
+
+aside.program {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+	margin: 15px;
+	float: right;
+	background-color: #363636;
+}
+
+aside.program > section {
+	text-align: center;
+	display: inline-block;
+	
+}
+
+aside.program h1, h2, h3, h4, h5, h6, p {
+	display: block;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+aside.program p{
+	text-align: center;
+}
+
+aside.program h1, h2, h3, h4, h5, h6 {
+	border-bottom: 3px solid black;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	article {
+		display: block;
+		width: 75%;
+		vertical-align: center;
+	}
+	aside.program {
+		display: block;
+		float: none;
+		width: 75%;
+		vertical-align: center;
+	}
+}

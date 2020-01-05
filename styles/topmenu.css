@@ -1,0 +1,123 @@
+nav#topmenu {
+    font-family: font_topmen;
+    position: fixed;
+    top: 0;
+    z-index:100;
+    width: 100%;
+}
+
+#topmenu ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+	  background:black;
+	  width: 100%;
+}
+
+#topmenu ul li {
+	background: black;
+  text-decoration: none;
+	transition-duration: 0.5s;
+  border-bottom: black solid 3px;
+}
+
+
+#topmenu ul li:hover {
+    background: white;
+    cursor: pointer;
+	  border-bottom: red solid 3px;
+}
+
+#topmenu ul li a {
+  color: red;
+}
+
+
+#topmenu>ul {
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#topmenu>ul>li {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+
+
+
+
+
+#topmenu>ul>li>a {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+  text-align: center;
+}
+
+ #topmenu ul li ol {
+	list-style:none;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+  top: 40px;
+  width:100%;
+	transition: all 2s ease;
+	display: none;
+}
+
+
+#topmenu ul li:hover > ol,
+#topmenu ul li ol:hover {
+	visibility: visible;
+	opacity: 1;
+  display: block;
+
+}
+
+
+#topmenu ul li ol li {
+	width: 100%;
+	display: inline-block;
+  height: 40px;
+}
+
+#topmenu ul li ol li a {
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+	#topmenu > ul {
+	display:block;
+	background:black;
+	width: auto;
+}
+	#topmenu>ul>li {
+		display: block;
+	}
+	#topmenu ul li {
+		float:none;
+	}
+	#topmenu ul li ol {
+		margin: none;
+		padding: none;
+		visibility: visible;
+		opacity: 1;
+		position: relative;
+		display: block;
+		transition: none;
+		margin-top: none;
+	}
+	#topmenu ul li:hover > ol,
+	#topmenu ul li ol:hover {
+		width:100%;
+	}
+}

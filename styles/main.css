@@ -1,0 +1,135 @@
+@font-face {
+	font-family: font_topmen;
+	src: url(../fonts/font-topmen.ttf);
+}
+
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.clear {
+	clear=both;
+}
+
+#login_buttons_wrapper {
+	position: absolute;
+	top: 130%;
+	left: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 300px;
+	height: 50px;
+}
+
+#log_in_button, #sign_up_button {
+	width: 100px;
+	height: 50px;
+	color: red;
+	font-size: 12pt;
+	font-family: Verdana;
+	border-radius: 6px;
+	background: black;
+	outline: none;
+	border: 3pt red solid;
+	font-weight: bolder;
+	text-transform: uppercase;
+	opacity: 70%;
+	cursor: pointer;
+}
+
+@keyframes tranzitie_bg_container_princip {
+  0%  {background-color: white;
+       background-image: none;}
+  25%  {background-color: #6e0909;
+  background-image: none;}
+  50%  {background-color: #543535;
+	background-image: none;
+  }
+  100% {background-color: black;
+	background-image: url("../imgs/background_main.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: scroll;
+  }
+}
+
+#container_princip {
+	background-image: url("../imgs/background_main.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: black;
+	background-attachment: scroll;
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 39px;
+	text-align:center;
+	animation-name:tranzitie_bg_container_princip;
+	animation-duration: 5s;
+	clear: both;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-decoration: none;
+	font-family: monospace;
+	font-weight: bold;
+	color: red;
+	margin: 12pt;
+}
+
+
+h1 {	font-size: 1.75em;}
+h2 {	font-size: 1.5em;}
+h3 {	font-size: 100%;}
+h4 {	font-size: 100%;}
+h5 {	font-size: 100%;}
+h6 {	font-size: 100%;}
+
+body, p {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-size: 16pt;
+}
+
+span.important {
+	font-weight: bold;
+	color: red;
+}
+
+span.important:hover{
+	visibility: hidden;
+	display:none;
+}
+
+#footer {
+	background-color:#b50e0e;
+	text-align: justify;
+	color: #949191;
+	width: 100%;
+
+}
+
+#footer p {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 5 px;
+	font-size: 10pt;
+	text-align: center;
+}

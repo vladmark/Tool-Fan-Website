@@ -1,0 +1,127 @@
+#grid_wrapper a {
+	text-decoration: none;
+	color: red;
+}
+
+#grid_wrapper {
+	margin: 20px;
+	display: inline-grid;
+	width: 70%;
+	height: 90%;
+	grid-template-columns: [albume] 33%	[poza] 33% [cumpara] 30%;
+	grid-template-rows: [album1] 300px [album2] 300px [album3] 300px;
+}
+
+
+#grid_wrapper .imagine_albume1, #grid_wrapper .imagine_albume2, #grid_wrapper .imagine_albume3 {
+
+	grid-column-start: poza;
+	grid-column-end: poza;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	padding: 10px;
+	border: 2px solid red;
+	position: relative;
+}
+
+#grid_wrapper .text_albume1, #grid_wrapper .text_albume2, #grid_wrapper .text_albume3 {
+
+	grid-column-start: albume;
+	grid-column-end: albume;
+	background-color: black;
+	padding: 10px;
+
+}
+
+
+#grid_wrapper .imagine_albume1 , #grid_wrapper .text_albume1{grid-row-start: 1;grid-row-end: 1;}
+#grid_wrapper .imagine_albume2, #grid_wrapper .text_albume2 {grid-row-start: 2;grid-row-end: 2;}
+#grid_wrapper .imagine_albume3 , #grid_wrapper .text_albume3{grid-row-start: 3;grid-row-end: 3;}
+
+#grid_wrapper .imagine_albume1 img, #grid_wrapper .imagine_albume2 img, #grid_wrapper .imagine_albume3 img  {
+
+	width: 100%;
+	height: auto;
+	position: absolute;
+	/* aici clar trebuie javascript pentru pozitionarea in inaltime i.e. top */
+	left: 0;
+}
+
+
+
+#grid_wrapper .cumpara {
+	grid-row-start: 1;
+	grid-row-end:3;
+	grid-column-start: cumpara;
+	grid-column-end: cumpara;
+	background-color: black;
+}
+
+#grid_wrapper .cumpara img {
+	display: inline-block;
+	margin: 10px;
+	max-width: 75%;
+	max-height: 75%;
+	vertical-align: center;
+}
+
+#grid_wrapper h1, h2, h3 {
+	font-family: Monospace;
+	font-weight: bold;
+	font-size: 16pt;
+}
+#grid_wrapper p{
+	font-family: monospace;
+	font-size: 10pt;
+}
+
+@media screen and (max-width: 600px) {
+		#grid_wrapper {
+		display: inline-grid;
+		width: 70%;
+		grid-template-columns: [albume] auto ;
+		grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+		}
+
+
+	#grid_wrapper .imagine_albume1, #grid_wrapper .imagine_albume2, #grid_wrapper .imagine_albume3 {
+		margin: 20px;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		background-color: black;
+		max-width: 70px;
+		max-height: 70px;
+		background-color: black;
+		padding: 10px;
+		border: 2px solid red;
+		}
+
+	#grid_wrapper .text_albume1, #grid_wrapper .text_albume2, #grid_wrapper .text_albume3 {
+		margin: 20px;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		background-color: black;
+
+	}
+
+
+
+	#grid_wrapper .text_albume1{grid-row-start: 1;grid-row-end: 1;}
+		#grid_wrapper .imagine_albume1  {grid-row-start: 2;grid-row-end: 2;}
+	#grid_wrapper .text_albume2 {grid-row-start: 3;grid-row-end: 3;}
+		#grid_wrapper .imagine_albume2  {grid-row-start: 4;grid-row-end: 4;}
+	#grid_wrapper .text_albume3 {grid-row-start: 5;grid-row-end: 5;}
+
+
+	#grid_wrapper .imagine_albume3  {grid-row-start: 6;grid-row-end: 6;}
+	#grid_wrapper .cumpara {
+		grid-row-start: 7;
+		grid-row-end:9;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		background-color: black;
+	}
+
+}

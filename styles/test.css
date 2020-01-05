@@ -1,0 +1,18 @@
+
+#wrap {
+	display: flex;
+	justify-content: space-evenly;
+	float: left;
+	width:100%;
+}
+#wrap ul {
+	background-color:red;
+	list-style:none;
+	text-align:center;
+	width:100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+#wrap ul li {
+	
+}
