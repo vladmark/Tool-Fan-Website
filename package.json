@@ -1,0 +1,30 @@
+{
+  "name": "unealta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmark/Vlad_Marchidanu_ProiectTW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladmark/Vlad_Marchidanu_ProiectTW/issues"
+  },
+  "homepage": "https://github.com/vladmark/Vlad_Marchidanu_ProiectTW#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "milsymbol": "^2.0.0",
+    "mongoose": "^5.8.4",
+    "sweetalert2": "^9.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "description": ""
+}
